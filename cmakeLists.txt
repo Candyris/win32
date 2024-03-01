@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.28.3)
+project(MyApp)
+
+# Set the source files (add more if needed)
+set(CMAKE_CXX_STANDARD 17)
+
+# Create the executable
+add_executable(winmain "Winmain.cpp")
+
+# Set the entry point to mainCRTStartup
+set_target_properties(winmain PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")
+
